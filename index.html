@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hajj Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>  
+
+<body>
+  <header class="header">
+    <h1 id="title" class="text-header">Hajj Survey Form</h1>
+    <p id="description" class="description text-header">
+      Overall, how satisfied are you with Harakat Travel?
+    </p>
+  </header>
+  
+  <form id="survey-form">
+    <div id="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" name="name" 
+      class="form-control" placeholder="Enter your name" 
+      required="" />
+    </div>
+ 
+    <div id="form-group">
+      <label id="email-label" for="email">Email</label> 
+      <input type="email" id="email" name="email" 
+      class="form-control" placeholder="Enter your email" 
+      required="" />
+    </div>
+  
+    <div id="form-group">
+      <label id="number-label" for="number">Age</label><input
+      type="number" name="age" id="number" min="10"
+      max="99" class="form-control" placeholder="Age"
+      required="" />
+    </div>
+
+    <div class="form-group">
+      <p>Who are you depart with?</p>
+      <select id="dropdown" name="role" class="form-control"
+      required="">
+        
+        <option disable="" selected="" value="">
+          Select an option</option>
+        <option value="withMyself">Set off with myself</option>
+        <option value="withFriends">Depart with friends</option>
+        <option value="withFamily">Depart with family</option>
+        <option value="preferNot">Prefer not to say</option>
+        <option value="other">Other</option>
+
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend Harakat Travel to a friend?</p>
+      <label>
+        <input type="radio" name="recommend" value="definitely"
+        class="input-radio" checked />Definitely
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="maybe"
+        class="input-radio"  />Maybe
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="not-sure"
+        class="input-radio"  />Not sure
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>What is your favorite part of going Hajj with us?</p>
+      <select id="dropdown2" name="dropdown2" 
+      class="form-control" required>
+        <option disable="" selected="" value="">
+          Select an option
+        </option>
+        <option value="hotel">The Ustadz</option>
+        <option value="facilities">Facilities are good</option>
+        <option value="food">Good food</option>
+        <option value="transportation">Transportation services</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>What would you like to see improved?</p>
+      <h4>Pre-departure Service</h4>
+      <label>
+        <input name="prefer" type="checkbox" value="front-end-projects" 
+        class="input-checkbox" />Ease of Getting Information
+      </label>
+      <label>
+        <input name="prefer" type="checkbox" value="back-end-projects" 
+        class="input-checkbox" />Ease of Document Process
+      </label>
+      
+      <h4>During Hajj</h4>
+      <label>
+        <input name="hotel-services" type="checkbox" value="hotel-services" 
+        class="input-checkbox" />Hotel services
+      </label>
+      <label>
+        <input name="catering" type="checkbox" value="catering" 
+        class="input-checkbox" />Catering providers
+      </label>
+      <label>
+        <input name="transportation" type="checkbox" value="city-meetups" 
+        class="input-checkbox" />Transportation services
+      </label>
+      <label>
+        <input name="guides" type="checkbox" value="wiki" 
+        class="input-checkbox" />Services from Hajj Guides
+      </label>
+    </div>
+    <br>
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea id="comments" class="textarea" name="comment" 
+      placeholder="Enter your comment here.."></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+  
+</body></html>
